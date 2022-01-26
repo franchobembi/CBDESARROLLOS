@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<head>
+    <title>CB Desarrollos</title>
+    <link rel="stylesheet" href="cbdesarrollos copy.css">
+    <script src="cbdesarrollos copy.js"></script>
+    <script src="https://use.fontawesome.com/5cc9dc26da.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600&display=swap" rel="stylesheet">
+    
+</head>
+<img src="IMAGENES/casco-01.png" id="backgroundImage">
+<header>
+    <img src="IMAGENES/LOGO.PNG" style="display: block; height: 60%; width: auto; margin-top: 20px; margin-left: 1.25%;">
+    <div id="contacto">
+        <span id="contactoWord">CONTÁCTENOS<span style="opacity: 0;">_</span></span><i class="fa fa-phone"></i>
+    </div>
+</header>
+<nav>
+    <div class="items"><a href="#proyectos">PROYECTOS</a></div>
+    <div class="items"><a href="#novedades">EN EJECUCIÓN</a></div>
+    <div class="items"><a href="#servicios">SERVICIOS</a></div>
+    <div class="items"><a href="#quienes">QUIENES SOMOS</a></div>
+</nav>
+<div id="navBorder">
+    <div id="square" style="height: 100%; width: 80px; background-color: rgb(56, 91, 128); position: absolute;"></div>
+</div>
+<div id="content">
+    <section id="proyectos">
+        <div class="ProyectoItem" style="animation-delay: 0.1s;" onclick="cardOpen(0)">
+            <div class="ImagenItem" id="rosales2"></div>
+            <h5>Rosales 2654<br><span style="color: rgb(56, 91, 128); font-weight: 600;">+ info</span></h5>
+        </div>
+        <div class="ProyectoItem" style="animation-delay: 0.2s;" onclick="cardOpen(1)">
+            <div class="ImagenItem" id="rosales1"></div>
+            <h5>Rosales 2657<br><span style="color: rgb(56, 91, 128); font-weight: 600;">+ info</span></h5>
+        </div>
+        <div class="ProyectoItem" style="animation-delay: 0.3s;" onclick="cardOpen(2)">
+            <div class="ImagenItem" id="pico"></div>
+            <h5>Pico 1671<br><span style="color: rgb(56, 91, 128); font-weight: 600;">+ info</span></h5>
+        </div>
+        <div class="ProyectoItem" style="animation-delay: 0.4s;" onclick="cardOpen(3)">
+            <div class="ImagenItem" id="orlando"></div>
+            <h5>Eola, Orlando<br><span style="color: rgb(56, 91, 128); font-weight: 600;">+ info</span></h5>
+        </div>
+        <div class="ProyectoItem" style="animation-delay: 0.5s;" onclick="cardOpen(4)">
+            <div class="ImagenItem" id="entrerios1"></div>
+            <h5>Entre Rios 633<br><span style="color: rgb(56, 91, 128); font-weight: 600;">+ info</span></h5>
+        </div>
+        <div class="ProyectoItem" style="animation-delay: 0.6s;" onclick="cardOpen(5)">
+            <div class="ImagenItem" id="alberdi"></div>
+            <h5>Alberdi 555<br><span style="color: rgb(56, 91, 128); font-weight: 600;">+ info</span></h5>
+        </div>
+        <div class="ProyectoItem" style="animation-delay: 0.7s;" onclick="cardOpen(6)">
+            <div class="ImagenItem" id="entrerios2"></div>
+            <h5>Entre Rios 625<br><span style="color: rgb(56, 91, 128); font-weight: 600;">+ info</span></h5>
+        </div>
+        <div class="ProyectoItem" style="animation-delay: 0.8s;" onclick="cardOpen(7)">
+            <div class="ImagenItem" id="gatodumas"></div>
+            <h5>Gato Dumas<br><span style="color: rgb(56, 91, 128); font-weight: 600;">+ info</span></h5>
+        </div>
+        <div class="ProyectoItem" style="animation-delay: 0.9s;" onclick="cardOpen(8)">
+            <div class="ImagenItem" id="cabrera"></div>
+            <h5>Cabrera 6054<br><span style="color: rgb(56, 91, 128); font-weight: 600;">+ info</span></h5>
+        </div>
+        <div class="ProyectoItem" style="animation-delay: 1s;" onclick="cardOpen(9)">
+            <div class="ImagenItem" id="maipu"></div>
+            <h5>Maipu 1936<br><span style="color: rgb(56, 91, 128); font-weight: 600;">+ info</span></h5>
+        </div>
+        <div class="ProyectoItem" style="animation-delay: 1.1s;" onclick="cardOpen(10)">
+            <div class="ImagenItem" id="belgrano"></div>
+            <h5>Belgrano 1132<br><span style="color: rgb(56, 91, 128); font-weight: 600;">+ info</span></h5>
+        </div>
+        <div class="ProyectoItem" style="animation-delay: 1.2s;" onclick="cardOpen(11)">
+            <div class="ImagenItem" id="marbella"></div>
+            <h5>Marbella, España<br><span style="color: rgb(56, 91, 128); font-weight: 600;">+ info</span></h5>
+        </div>
+    </section>
+    <section id="novedades">
+        <div id="ejecucionContainer">
+            <div id="ejecucionPhotos">
+                <img src="IMAGENES/Proyectos/Pico/pico (4).jpg" class="novedadesProyecto">
+            </div>
+            <div id="ejecucionInfo"></div>
+            <div class="next" onclick="nextProject()"></div>
+            <div class="prev" onclick="prevProject()"></div>
+        </div>
+    </section>
+    <section style="height: 1000px; margin-top: 100px;" id="servicios">
+        <div id="headline">
+            <h1>Nuestros servicios abarcan las distintas etapas del proyecto / negocio inmobiliario desde la identificación de la tierra, puesta en marcha del proyecto hasta su comercialización.</h1>
+        </div>
+        <div id="list">
+            <ul class ="lista">
+                <li class = "serviciosLista" style="list-style-type: none; padding-top: 1vw; animation-delay: 0.1s;"><i class="fa fa-check-circle" style="color:rgb(56, 91, 128)"></i>  Desarrollo de proyectos inmobiliarios</li>
+                <li class = "serviciosLista" style="list-style-type: none; padding-top: 1vw; animation-delay: 0.2s;"><i class="fa fa-check-circle" style="color:rgb(56, 91, 128)"></i>  Administración de carteras de bienes raíces</li>
+                <li class = "serviciosLista" style="list-style-type: none; padding-top: 1vw; animation-delay: 0.3s;"><i class="fa fa-check-circle" style="color:rgb(56, 91, 128)"></i>  Análisis de mercados</li>
+                <li class = "serviciosLista" style="list-style-type: none; padding-top: 1vw; animation-delay: 0.4s;"><i class="fa fa-check-circle" style="color:rgb(56, 91, 128)"></i>  Asesoramiento legal/fiscal a inversores</li>
+                <li class = "serviciosLista" style="list-style-type: none; padding-top: 1vw; animation-delay: 0.5s;"><i class="fa fa-check-circle" style="color:rgb(56, 91, 128)"></i>  Compra de carteras con problemas</li>
+                <li class = "serviciosLista" style="list-style-type: none; padding-top: 1vw; animation-delay: 0.6s;"><i class="fa fa-check-circle" style="color:rgb(56, 91, 128)"></i>  Selección de espacios para proyectos</li>
+                <li class = "serviciosLista" style="list-style-type: none; padding-top: 1vw; animation-delay: 0.7s;"><i class="fa fa-check-circle" style="color:rgb(56, 91, 128)"></i>  Análisis y administración integral de proyectos</li>
+                <li class = "serviciosLista" style="list-style-type: none; padding-top: 1vw; animation-delay: 0.8s;"><i class="fa fa-check-circle" style="color:rgb(56, 91, 128)"></i>  Manejo de eficiencias para capital de trabajo</li>
+                <li class = "serviciosLista" style="list-style-type: none; padding-top: 1vw; animation-delay: 0.9s;"><i class="fa fa-check-circle" style="color:rgb(56, 91, 128)"></i>  Acuerdos estratégicos con proveedores</li>
+        
+            </ul>
+        </div>
+        <div id="pics">
+            <div class="picItem" id="one"></div>
+            <div class="picItem" id="two"></div>
+        </div>
+    </section>
+    <section id="quienes">
+        <div id="portada" alt=""></div>
+        <div style="width: 100%; height: 100%; ">
+        <p style="margin-left: 50px; color: white; margin-top: 30px;">
+            CB Desarrollos Inmobiliarios es una empresa dedicada a desarrollar proyectos y negocios inmobiliarios con más de 15 años de experiencia en el mercado local y en mercados internacionales. <br><br> La empresa fue creada por Carlos M. Barbieri, quien después de 21 de experiencia en el mercado financiero, trabajando especialmente en bancos y corporaciones internacionales tales como Citibank, JPMorgan, ING Bank (COO) y Deutsche Bank (COO), se dedicó a desarrollar negocios e inversiones en bienes raíces.<br><br> Contamos con equipos interdisciplinarios que nos colocan en una posición privilegiada para ofrecer un servicio integral dentro del sector inmobiliario. Empleamos el talento y la experiencia para aportar soluciones, innovación y excelencia a nuestros clientes. <br><br> Debido a nuestra integridad y honestidad en cada uno de nuestros proyectos, hemos contado con la confianza de muchos inversores que nos han acompañado a lo largo de estos años con un nivel de satisfacción importante y con una performance exitosa en los desarrollos. <br><br>  A pesar de varias situaciones adversas que ha sufrido el mercado inmobiliario, hemos tenido la templanza y la madurez para salir con éxito en muchos casos donde el mercado no fue el esperado. Acompañamos a los inversores durante todo el proceso de desarrollo desde la inicio del proyecto hasta la comercialización final del producto. <br>
+        </p>
+        </div>
+    </section>
+</div>
+
+
+<div class="tarjetas" id="tarjetas1">
+    <div class="imagenTarjetas">
+        <img src="IMAGENES/Proyectos/Rosales 2654/rosales 2654 (1).jpg" class="foto0">
+        <img src="IMAGENES/Proyectos/Rosales 2654/rosales 2654 (2).jpg" class="foto0">
+        <img src="IMAGENES/Proyectos/Rosales 2654/rosales 2654 (3).jpg" class="foto0">
+        <img src="IMAGENES/Proyectos/Rosales 2654/rosales 2654 (4).jpg" class="foto0">
+        <img src="IMAGENES/Proyectos/Rosales 2654/rosales 2654 (6).jpg" class="foto0">
+        <div class="prev" onclick="prevImg()"></div>
+        <div class="next" onclick="nextImg()"></div>
+    </div>
+    <div class="textoTarjetas">
+        <h6 style="color:white">Rosales 2654</h6>
+        <ul class ="listaTarjetas">
+            <li class="listItem"><i class="fa fa-check-circle"></i>  <b>5500m2</b> de Superficie total</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Período de ejecución - <b>1998 / 2000</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Torre de <b>14 pisos</b> con vista al río</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Semipisos de <b>143m2</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Ambientes con dependencia</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Planta baja libre parquizada</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Dos niveles de subsuelo con estacionamientos</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Bauleras y cocheras de cortesía</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Salones de reuniones, laundry y parrillas</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Terrazas con solarium y piscina</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Seguridad y CCTV</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Ascensores principales con puertas automáticas y ascensor de servicio</li>
+        </ul>
+    </div>
+</div>
+<div class="tarjetas" id="tarjetas2">
+    <div class="imagenTarjetas">
+        <img src="IMAGENES/Proyectos/Rosales 2657/rosales 2657 (1).jpg" class="foto1">
+        <img src="IMAGENES/Proyectos/Rosales 2657/rosales 2657 (2).jpg" class="foto1">
+        <img src="IMAGENES/Proyectos/Rosales 2657/rosales 2657 (3).jpg" class="foto1">
+        <img src="IMAGENES/Proyectos/Rosales 2657/rosales 2657 (4).jpg" class="foto1">
+        <img src="IMAGENES/Proyectos/Rosales 2657/rosales 2657 (5).jpg" class="foto1">
+        <img src="IMAGENES/Proyectos/Rosales 2657/rosales 2657 (6).jpg" class="foto1">
+        <div class="prev" onclick="prevImg()"></div>
+        <div class="next" onclick="nextImg()"></div>
+    </div>
+    <div class="textoTarjetas">
+        <h6 style="color:white">Rosales 2657</h6>
+        <ul class ="listaTarjetas">
+            <li class="listItem"><i class="fa fa-check-circle"></i>  <b>4320m2</b> de Superficie total</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Período de ejecución - <b>2005 / 2007</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Edificio de <b>15 pisos</b> con vista al río</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Pisos de <b>170m2</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Duplex de <b>250m2</b> con dependencia</li>            
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Balcon terraza en estares y dormitorios principales</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Planta baja libre parquizada</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Dos niveles de subsuelo con estacionamientos</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Salon de estar, gimnasio y parrilla</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Pileta de niños en planta baja</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Piscina y solarium en piso 16</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Seguridad y CCTV</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Ascensor principal y de servicio, puertas automáticas</li>
+        </ul>
+    </div>
+</div>
+<div class="tarjetas" id="tarjetas3">
+    <div class="imagenTarjetas">
+        <img src="IMAGENES/Proyectos/Pico/pico (2).jpg" class="foto2">
+        <img src="IMAGENES/Proyectos/Pico/pico (1).jpg" class="foto2">
+        <img src="IMAGENES/Proyectos/Pico/pico (3).jpg" class="foto2">
+        <img src="IMAGENES/Proyectos/Pico/pico (4).jpg" class="foto2">
+        <div class="prev" onclick="prevImg()"></div>
+        <div class="next" onclick="nextImg()"></div>
+    </div>
+    <div class="textoTarjetas">
+        <h6 style="color:white">Pico 1671</h6>
+        <ul class ="listaTarjetas">
+            <li class="listItem"><i class="fa fa-check-circle"></i>  <b>2500m2</b> de Superficie total</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Período de ejecución - <b>2010 / 2012</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Monoambientes de <b>45m2</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Sala de reuniones y comedor en piso 8</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Cocheras en planta baja y subsuelo</li>
+        </ul>
+    </div>
+</div>
+<div class="tarjetas" id="tarjetas4">
+    <div class="imagenTarjetas">
+        <img src="IMAGENES/Proyectos/Orlando/orlando.png" class="foto3">
+    </div>
+    <div class="textoTarjetas">
+        <h6 style="color:white">Eola, Orlando</h6>
+        <ul class ="listaTarjetas">
+            <li class="listItem"><i class="fa fa-check-circle"></i>Asesoramiento personalizado a inversores</li>
+        </ul>
+    </div>
+</div>
+<div class="tarjetas" id="tarjetas5">
+    <div class="imagenTarjetas">
+        <img src="IMAGENES/Proyectos/Entre Rios/entre rios 633.jpg" class="foto4">
+        <img src="IMAGENES/Proyectos/Entre Rios/entre rios extra .jpg" class="foto4">
+        <div class="prev" onclick="prevImg()"></div>
+        <div class="next" onclick="nextImg()"></div>
+    </div>
+    <div class="textoTarjetas">
+        <h6 style="color:white">Entre Rios 633</h6>
+        <ul class ="listaTarjetas">
+            <li class="listItem"><i class="fa fa-check-circle"></i>  <b>2600m2</b> de Superficie total</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Período de ejecución - <b>2004 / 2006</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Departamentos de <b>2, 3 y 4</b> ambientes</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Planta baja parquizada y <b>7 pisos</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Subsuelo con estacionamiento y cocheras de cortesía</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Salon de reuniones, parrilla y laundry en terraza</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Ascensores con puertas automáticas y frecuencia variable</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Seguridad</li>
+        </ul>
+    </div>
+</div>
+<div class="tarjetas" id="tarjetas6">
+    <div class="imagenTarjetas">
+        <img src="IMAGENES/Proyectos/Alberdi/alberdi 555 (3).jpg" class="foto5">
+        <img src="IMAGENES/Proyectos/Alberdi/alberdi 555 (2).jpg" class="foto5">
+        <img src="IMAGENES/Proyectos/Alberdi/alberdi 555 (1).jpg" class="foto5">
+        <img src="IMAGENES/Proyectos/Alberdi/alberdi 555-.jpg" class="foto5">
+        <div class="prev" onclick="prevImg()"></div>
+        <div class="next" onclick="nextImg()"></div>
+    </div>
+    <div class="textoTarjetas">
+        <h6 style="color:white">Alberdi 555</h6>
+        <ul class ="listaTarjetas">
+            <li class="listItem"><i class="fa fa-check-circle"></i>  <b>5500m2</b> de Superficie total</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Período de ejecución - <b>2002 / 2004</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Torre de <b>15 pisos</b> con vista al río</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Departamentos de <b>3 y 4</b> ambientes</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Simplex y Duplex</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Planta baja libre parquizada con hall de acceso de doble altura</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Tres niveles de subsuelo con estacionamientos</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Bauleras y cocheras de cortesía</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Salones de reuniones, sauna y laundry en terraza</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Penthouse con piscina exclusiva en piso 12</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Seguridad y CCTV</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Dos ascensores con puertas automáticas y frecuencia variable</li>
+        </ul>
+    </div>
+</div>
+<div class="tarjetas" id="tarjetas7">
+    <div class="imagenTarjetas">
+        <img src="IMAGENES/Proyectos/Entre Rios 2/entre rios 625 2.jpg" class="foto6">
+        <img src="IMAGENES/Proyectos/Entre Rios 2/entre rios 625.jpg" class="foto6">
+        <div class="prev" onclick="prevImg()"></div>
+        <div class="next" onclick="nextImg()"></div>
+    </div>
+    <div class="textoTarjetas">
+        <h6 style="color:white">Entre Rios 625</h6>
+        <ul class ="lista">
+            <li class="listItem"><i class="fa fa-check-circle"></i>  <b>960m2</b> de Superficie total</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Período de ejecución - <b>2005 / 2006</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Pisos de <b>130m2</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Departamentos de <b>4 ambientes</b> con dependencia</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Un subsuelo con estacionamiento y cocheras de cortesía</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Planta baja libre parquizada y 7 pisos</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Salones de reuniones, laundry y parrillas en terraza</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Seguridad</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Ascensores con puertas automáticas y ascensor de servicio</li>
+        </ul>
+    </div>
+</div>
+<div class="tarjetas" id="tarjetas8">
+    <div class="imagenTarjetas">
+        <img src="IMAGENES/Proyectos/Gato Dumas/gato dumas (1).jpg" class="foto7">
+        <img src="IMAGENES/Proyectos/Gato Dumas/gato dumas (2).jpg" class="foto7">
+        <img src="IMAGENES/Proyectos/Gato Dumas/gato dumas (3).jpg" class="foto7">
+        <div class="prev" onclick="prevImg()"></div>
+        <div class="next" onclick="nextImg()"></div>
+    </div>
+    <div class="textoTarjetas">
+        <h6 style="color:white">Instituto Gato Dumas, CABA</h6>
+        <ul class ="listaTarjetas">
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Desarrollo de colegio de gastronomía</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Período de ejecución - <b>2011 / 2012</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  <b>3000m2</b> de superficie total</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Aulas técnicas y aulas de cocina</li>
+        </ul>
+    </div>
+</div>
+<div class="tarjetas" id="tarjetas9">
+    <div class="imagenTarjetas">
+        <img src="IMAGENES/Proyectos/Cabrera/cabrera (1).jpg" class="foto8">
+        <img src="IMAGENES/Proyectos/Cabrera/cabrera (2).jpg" class="foto8">
+        <img src="IMAGENES/Proyectos/Cabrera/cabrera (3).jpg" class="foto8">
+        <div class="prev" onclick="prevImg()"></div>
+        <div class="next" onclick="nextImg()"></div>
+    </div>
+    <div class="textoTarjetas">
+        <h6 style="color:white">Cabrera 6054</h6>
+        <ul class ="listaTarjetas">
+            <li class="listItem"><i class="fa fa-check-circle"></i>  <b>2400m2</b> de Superficie total</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Período de ejecución - <b>2006 / 2008</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Edificio de <b>9 pisos</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Unidades divisibles de <b>48m2</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  <b>31</b> unidades funcionales</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Solarium</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Parrillas</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Espacio guardacoches</li>
+        </ul>
+    </div>
+</div>
+<div class="tarjetas" id="tarjetas10">
+    <div class="imagenTarjetas">
+        <img src="IMAGENES/Proyectos/Maipu/maipu  1936(2).jpg" class="foto9">
+        <img src="IMAGENES/Proyectos/Maipu/maipu  1936(3).jpg" class="foto9">
+        <div class="prev" onclick="prevImg()"></div>
+        <div class="next" onclick="nextImg()"></div>
+    </div>
+    <div class="textoTarjetas">
+        <h6 style="color:white">Maipu 1936</h6>
+        <ul class ="listaTarjetas">
+            <li class="listItem"><i class="fa fa-check-circle"></i>  <b>2000m2</b> de Superficie total</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Período de ejecución - <b>2012</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Departamentos de <b>2 y 3</b> ambientes</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Edificio entre medianeras</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Terrazas con parrillas y Solarium</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Cocheras en Planta baja y Subsuelo</li>
+        </ul>
+    </div>
+</div>
+<div class="tarjetas" id="tarjetas11">
+    <div class="imagenTarjetas">
+        <img src="IMAGENES/Proyectos/Belgrano/Belgrano 1132 (1).jpg" class="foto10">
+        <img src="IMAGENES/Proyectos/Belgrano/Belgrano 1132 (2).jpg" class="foto10">
+        <img src="IMAGENES/Proyectos/Belgrano/Belgrano 1132 (5).jpg" class="foto10">
+        <div class="prev" onclick="prevImg()"></div>
+        <div class="next" onclick="nextImg()"></div>
+    </div>
+    <div class="textoTarjetas">
+        <h6 style="color:white">Belgrano 1132</h6>
+        <ul class ="listaTarjetas">
+            <li class="listItem"><i class="fa fa-check-circle"></i>  <b>1500m2</b> de Superficie total</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Período de ejecución - <b>2010 / 2011</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Departamentos de <b>2 y 3</b> ambientes</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Edificio entre medianeras</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Cocheras en planta baja</li>
+        </ul>
+    </div>
+</div>
+<div class="tarjetas" id="tarjetas12">
+    <div class="imagenTarjetas">
+        <img src="IMAGENES/Proyectos/Marbella/marbella 1.jpg" class="foto11">
+        <img src="IMAGENES/Proyectos/Marbella/marbella 2.jpg" class="foto11">
+        <img src="IMAGENES/Proyectos/Marbella/marbella 3.jpg" class="foto11">
+        <img src="IMAGENES/Proyectos/Marbella/marbella 4.jpg" class="foto11">
+        <div class="prev" onclick="prevImg()"></div>
+        <div class="next" onclick="nextImg()"></div>
+    </div>
+    <div class="textoTarjetas">
+        <h6 style="color:white">Marbella, España</h6>
+        <ul class ="lista">
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Solar de <b>4200m2</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Trámite de aprobación de planos municipales en ejecución</li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Construcción de <b>2000m2</b></li>
+            <li class="listItem"><i class="fa fa-check-circle"></i>  Solar lindero a Atalaya Club de Golf</li>
+        </ul>
+    </div>
+</div>
+<div id="fondo-tarjetas" onclick="closeCard()"></div>
+</div>
+ 
